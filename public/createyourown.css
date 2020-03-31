@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+
+body {
+    /* background-color: #979CF5; */
+    background-image: linear-gradient(#7FA5AD, #CFB5B0);
+    margin: 100px;
+  }
+
+  .navbar {
+    overflow: hidden;
+    /* background-color: #333; */
+    position: fixed;
+    top: 30px;
+    width: 100%;
+    margin-top: 9%;
+    margin-left: 3%;
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: #292727;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'gt_super_display_trial_reguRg';
+  }
+  
+  .navbar a:hover {
+    background: #ddd;
+    color: black;
+  }
+
+  .menu{
+    margin-top: 5%;
+  }
+
+  #share{
+    margin-top: 7%;
+    margin-left: -8%;
+  }
+
+  #create{
+    margin-top: 14%;
+    margin-left: -8%;
+  }
+
+  #buy{
+    margin-top: 21%;
+    margin-left: -8%;
+  }
+
+  #head{
+    text-align: center;
+    padding-bottom: 6%;
+    color:#D8D8D8;
+    font-size: 70px;
+    font-family: 'gt_super_display_trial_reguRg';
+  } 
+
+
+.record:hover{
+  color: lightgray;
+} 
+
+/* .column{
+  column-count: 3;
+  margin-left: 120px;
+} */
+
+button{ 
+  background-color:white; 
+  border: none; 
+  color: white; 
+  padding: 16px 32px;
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer; 
+  font-family: 'gt_super_display_trial_reguRg';
+}
+
+.column{
+  padding-left: 10%;
+}
+
+.record {
+  font-family: 'gt_super_display_trial_reguRg';
+  /* margin-bottom: -5px; */
+  color:white;
+  text-align: left;
+  font-size: 50px;
+  margin-left: 10%;
+  /* margin-left: 4%; */
+}
+
+
+/* Customize the label (the container) */
+.record {
+  display: block;
+  position: relative;
+  padding-left: 70px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* change text colour when checked/selected */
+input[type=checkbox]:checked + .record {
+  color: red;  
+  }
+
+/* Hide the browser's default checkbox */
+.record input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 6px;
+  left: -30px;
+  height: 35px;
+  width: 35px;
+  background-color: #eee;
+  max-width: 100%;
+  
+}
+
+/* On mouse-over, add a grey background color */
+.record:hover input ~ .checkmark {
+  background-image: linear-gradient(#7FA5AD, #CFB5B0);
+}
+
+/* When the checkbox is checked, add a blue background */
+.record input:checked ~ .checkmark {
+  background-image: linear-gradient(#7FA5AD, #CFB5B0);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.record input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.record .checkmark:after {
+  left: 9px;
+  top: 7px;
+  width: 4px;
+  height: 22px;
+  border-right: 6px solid #fff;
+  border-left: 6px solid #fff;
+}
+
+#submit {
+  background-color: white;
+  color: black;
+  border: 2px solid #e7e7e7; 
+}
+
+#submit:hover {background-color: #e7e7e7;}
