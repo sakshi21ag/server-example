@@ -5,9 +5,12 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 app.use(express.static('public'));
 
+require('dotenv').config();
+
 // DATABASE, COMMUNICATION BETWEEN SERVER AND DATABASE
 const mongoose = require('mongoose');
-const MONGODB_KEY = "mongodb+srv://sakshi:Apple@123@cluster0-4vop9.mongodb.net/share?retryWrites=true&w=majority";
+// const MONGODB_KEY = "mongodb+srv://sakshi:Apple@123@cluster0-4vop9.mongodb.net/share?retryWrites=true&w=majority";
+const MONGODB_KEY = process.env.MONGODB_KEY;
 mongoose.connect(MONGODB_KEY, {useNewUrlParser: true});
 
 // DATA MODEL, THE KIND OF DATA EX - TEXT
@@ -32,5 +35,6 @@ app.get("/all-submissions", (req, res) => {
 });
 
 // CONNECTION
-const PORT = 3000;
+// const PORT = 3000;
+const PORT = process.env.PORT;
 app.listen(PORT, () => console.log("server running on port " + PORT));
