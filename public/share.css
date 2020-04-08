@@ -1,56 +1,68 @@
 body{
-    margin-top: 5%;
     margin-left: 100px;
     margin-right: 100px;
-
-
   }
   
   .navbar {
     overflow: hidden;
     /* background-color: #333; */
     position: fixed;
-    width: 100%;
-    margin-left: 3%;
+    width: 1500px;
+    margin-left: -100px;
+    background-color: rgb(235, 231, 231);
+    margin-top: -47px;
   }
   
   .navbar a {
     float: left;
     display: block;
-    color: #292727;
+    color: rgb(151, 148, 148);
     text-align: center;
     padding: 16px;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 25px;
     font-family: 'gt_super_display_trial_reguRg';
   }
   
-  .navbar a:hover {
-    width: 90px;
-    height: 25px;
-    background: rgb(235, 232, 232);
-    border-radius: 25px;
-    margin:auto;
+  .menu1 a:hover {
+    color: #edc28f;
+  }
+
+  .menu2 a:hover {
+    color: #84c2a9;
+  }
+
+  .menu3 a:hover {
+    color: #d98d80;
+  }
+
+  .menu4 a:hover {
+    color: #a4d2da;
   }
   
-  /* .menu{
-    margin-top: 5%;
+  #about{
+    margin-left: 5%;
   }
-  
+
   #share{
-    margin-top: 7%;
-    margin-left: -8%;
+    margin-left: 2%;
   }
-  
+
   #create{
-    margin-top: 14%;
-    margin-left: -8%;
+    margin-left: 2%;
   }
-  
+
   #buy{
-    margin-top: 21%;
-    margin-left: -8%;
-  } */
+    margin-left: 2%;
+  }
+
+  h1{
+    text-align: center;
+    color: rgb(175, 174, 174);
+    font-size: 70px;
+    font-family: 'gt_super_display_trial_reguRg';
+    padding-top: 7%;
+  } 
 
   #share-form{
       text-align: center;
@@ -58,7 +70,6 @@ body{
   }
 
   #share-input{
-    margin-top: 10%;
   }
 
 /* #share-submit{
