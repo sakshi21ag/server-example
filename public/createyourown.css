@@ -211,3 +211,14 @@ canvas{
   height:100%;
 }
 
+#introduction{
+  margin-left: 230px;
+  text-align: center;
+  color: white;
+  font-size: 26px;
+  font-family: 'gt_super_display_trial_reguRg';
+  padding-right: 10%;
+  max-width: 700px;
+  line-height: 33px;
+  margin-top: -80px;
+}
