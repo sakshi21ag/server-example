@@ -103,6 +103,7 @@ body{
 .share{
   margin-bottom: 70px;
   width: 33%;
+  color: rgb(105,105,105);
 }
 
 #share-submit{
