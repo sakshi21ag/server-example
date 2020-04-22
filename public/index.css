@@ -100,7 +100,7 @@ margin-top: 85px;
       max-height: 350px;
   }
   
-  @media only screen and (max-width:550px) {
+  @media only screen and (max-width:500px) {
     /* For mobile phones: */
     .intro{
     font-size: 18px;

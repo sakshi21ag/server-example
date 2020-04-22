@@ -223,7 +223,7 @@ canvas{
   margin-top: -80px;
 }
 
-@media only screen and (max-width:550px) {
+@media only screen and (max-width:500px) {
   /* For mobile phones: */
   #introduction {
   font-size: 18px;
