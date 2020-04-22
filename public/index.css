@@ -100,15 +100,29 @@ margin-top: 85px;
       max-height: 350px;
   }
   
-
-/* .footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color:grey;
-  color: white;
-  text-align: center;
-  font-family: playfair display;
-} */
-
+  @media only screen and (max-width:550px) {
+    /* For mobile phones: */
+    .intro{
+    font-size: 18px;
+    margin-left: -20px;
+    text-align: left;
+    line-height: 25px;
+    }
+    .parawidth{
+      max-width: 100%;
+      margin-bottom: 35%;
+      margin-left: -20px;
+    }
+    .navbar{
+      font-size: 25px;
+      margin-left: -100px;
+      overflow: hidden;
+      position: fixed;
+      width: 900px; 
+    }
+    #parallaxspace{
+      margin-top: 0px;
+      }
+    #circle{
+        display: none;
+      }

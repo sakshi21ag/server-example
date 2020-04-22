@@ -222,3 +222,54 @@ canvas{
   line-height: 33px;
   margin-top: -80px;
 }
+
+@media only screen and (max-width:550px) {
+  /* For mobile phones: */
+  #introduction {
+  font-size: 18px;
+  margin-left: auto;
+  text-align: left;
+  line-height: 25px;
+  margin-top: -5px;
+  }
+  #head{
+    font-size: 25px;
+    margin-left: auto;
+  text-align: left;
+  margin-top: 0px;
+  padding-top: 25%;
+  }
+  .share{
+    width: 100%;
+  }
+  .navbar{
+    font-size: 25px;
+    margin-left: -100px;
+    overflow: hidden;
+    position: fixed;
+    width: 900px; 
+  }
+  .record {
+    text-align: left;
+    font-size: 30px;
+    margin-left: -35px;
+  }
+    .record {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 30px;
+  }
+  .checkmark {
+    top: -3px;
+    left: -30px;
+    height: 35px;
+    width: 35px;
+    background-color: #eee;
+    max-width: 100%;
+    -moz-border-radius: 20%;
+      -webkit-border-radius: 20%;
+      border-radius: 35%;
+    
+  }
+  

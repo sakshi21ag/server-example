@@ -127,40 +127,6 @@ body{
 }
 #share-submit:hover {background-color: #e7e7e7;}
 
-/* #circle {
-  height: 150px;
-  width: 150px;
-  background-color: #555;
-  border-radius: 50%;
-  margin-left: 45%;
-  margin-top: 10%;
-} */
-
-@import url('https://fonts.googleapis.com/css?family=Poppins:700');
-/* body {
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  position: relative;
-  background: #FFB1A4;
-  
-  display: flex;
-  align-items: center;
-} */
-
-/* h1 {
-  color: white;
-  font-size: 20vmin;
-  line-height: 1;
-  font-weight: bold;
-  letter-spacing: 2px;
-  font-family: 'Poppins', sans-serif;
-  text-transform: uppercase;
-  padding-left: 40px;
-} */
-
 .blob {
   position: fixed;
   top: 0;
@@ -219,3 +185,28 @@ body{
 }
 
 
+@media only screen and (max-width:550px) {
+  /* For mobile phones: */
+  #introduction , #shares{
+  font-size: 18px;
+  margin-left: auto;
+  text-align: left;
+  line-height: 25px;
+  }
+  h1{
+    font-size: 25px;
+    margin-left: auto;
+  text-align: left;
+  margin-top: 47px;
+  padding-top: 25%;
+  }
+  .share{
+    width: 100%;
+  }
+  .navbar{
+    font-size: 25px;
+    margin-left: -100px;
+    overflow: hidden;
+    position: fixed;
+    width: 900px; 
+  }
