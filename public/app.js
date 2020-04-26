@@ -20,13 +20,15 @@ function handleSubmit() {
 }
 
 function getAllShares() {
+    
     //request all data from server
     axios.get("/all-submissions").then(res => {
         const shareList = res.data;
         shares.innerHTML = "";
+        
         for(let i = 0; i < shareList.length; i++){
-            
-            const share = '<p class="share">' + shareList[i].entry + '</p>';
+
+            const share = '<p class="share">' + shareList[i].entry + '<br>' + '<br>'+ "—————————————–—————————————————————————————--"+ '</p>'  ;
             shares.innerHTML += share;
             //create a new html element for each item on the list
             //give it a class
@@ -34,3 +36,4 @@ function getAllShares() {
         }
     })
 }
+
